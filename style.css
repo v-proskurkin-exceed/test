@@ -187,3 +187,10 @@ span {
 .navy_yellow {
 	background-color: #cfca3c;
 }
+
+.color_red {
+	background-color: red;
+}
+.n0 {
+	color: red;
+}
