@@ -144,8 +144,10 @@ input[type="text"]{
 }
 
 span {
+	
 	border: 1px solid #000;
 	border-radius: 0 2px 2px 0;
+	
 	padding: 15px;
 	background-color: aqua;
 	color: rgb(255, 255, 255);
@@ -164,4 +166,24 @@ span {
 	border: 1px solid #000;
 	border-radius: 2px 0 0 2px;
 	background-color: aqua;
+}
+.red {
+	background-color: #fc6262;
+}
+.pink {
+	background-color: #ff80d7; 
+}
+.purple {
+	background-color: #8d55a3; 
+}
+.light_blue {
+	background-color: #4d7ee8;
+}
+
+.light_aqua {
+	background-color: #4ebdd9;
+}
+
+.navy_yellow {
+	background-color: #cfca3c;
 }
