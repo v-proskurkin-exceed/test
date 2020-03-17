@@ -1,57 +1,95 @@
 
-// $(window).ready(function() {
-// 	let i = 0;
-// 	let j = 0;
-// 	$("#but").on('click', function(){
-// 		let arr = ['red','pink','purple','light_blue','light_aqua','navy_yellow'];
-// 		let rand = Math.floor(Math.random() * arr.length);
-// 		let text = $('.getting_text').val();
-		
-		
-// 		$('#list').append('<li><div class="cl1"><input class="class_input_checkbox" type="checkbox"></div>'+'<span class="sp">'+ text + '</span>'+'</li>');
-// 		$('div.cl1:last').addClass('cdiv'+j);
-// 		$('span:last').addClass('cspan'+ i);
-		
-		
-// 		$('.cspan'+ i).addClass(arr[rand]);
-// 		$('.cdiv'+ j).addClass(arr[rand]);
-// 		$('.getting_text').val('');
-		
-		
-// 		i++;
-// 		j++;
-// 	});
-// 	$('.class_input_checkbox').on('change', function() {
-// 		if($('.class_input_checkbox').prop('checked')) {
-// 			$('div.cl1').addClass(' color_red');
-// 		}
-// 		else {
-// 				$('div.cl1').removeClass('color_red');	
-// 		}
-// 	})	
-// })
-	
+$(window).ready(function () {
+	let i = 0;
+	let j = 0;
+	let arr = ['red', 'pink', 'purple', 'light_blue', 'light_aqua', 'navy_yellow'];
+	$("#but").on('click', function () {
+
+		let rand = Math.floor(Math.random() * arr.length);
+		let text = $('.getting_text').val();
+
+    // $('#list').append(`<li class=${arr[rand]}><div><input  class="class_input_checkbox" type="checkbox"></div><div>${text}</div></li>`)
+		$('#list').append('<li class="' + arr[rand] + '">' + '<div class="cl1"><input class="class_input_checkbox" type="checkbox"></div>' + '<span class="sp">' + text + '</span>' + '</li>');
+		// $('div.cl1:last').addClass('cdiv' + j);
+		// $('span:last').addClass('cspan' + i);
 
 
-let i = 0;
-let j = 0;
-let arr = [];
-$("#but").on('click', function(){
+		$('.cspan' + i).addClass(arr[rand]);
+		$('.cdiv' + j).addClass(arr[rand]);
+		$('.getting_text').val('');
+		i++;
+		j++;
+	});
+	$('body').on('click', '.class_input_checkbox', function () {
+		if ($('.class_input_checkbox').is(':checked')) {
+			ColorEdit();
+		}
 
-let text = $('.getting_text').val();
+	})
+	function ColorEdit() {
 
-$('#list').append('<div>'+ text);
-$('div').addClass('n'+j);
-arr.push('n'+j);
-j++;
-// for(let i = 0; i < arr.length; i++) {
-// 	if()
-// }
-});
 
-$('#adCol').on('click',function() {
-	$('.n0').css('color','black');
+		$('.ccr').on('click', function () {
+			$('input[type=checkbox]:checked').each(function (index, value) {
+				$(this).parent().parent().css('background-color', 'red');
+				console.log($(this).parent());
+			});
+		})
+
+		$('.ccb').on('click', function () {
+			$('input[type=checkbox]:checked').each(function (index, value) {
+				$(this).parent().parent().css('background-color', 'blue');
+			})
+
+		})
+	}
+
+
+
+
+
 })
+
+
+
+
+
+//TEST TEST TEST
+
+// $("#but").on('click', function(){
+
+// let text = $('.getting_text').val();
+
+// $('#list').append('<div> <input class="class_input_checkbox" type="checkbox"></input>' +text+ '</div>');
+
+// });
+
+// // function abc(){     
+// //     if($("div .class_input_checkbox").prop("checked")) { 
+
+// //         $("div").css('border', '1px solid red');
+
+// // 	}
+// // else {
+// // 	$("div").css('border', '1px solid black');
+// // }
+
+// // }
+// // $("div .class_input_checkbox").on('click', function() {
+// // 	abc();
+// // })
+
+// $('.ch').on('click', function() {
+
+// 	if($('.class_input_checkbox').prop('checked')) {
+// 		alert(123)
+// 	}
+// })
+// $('.unch').on('click', function() {
+// 	$('.class_input_checkbox').prop('checked', false)
+// })
+
+
 
 
 

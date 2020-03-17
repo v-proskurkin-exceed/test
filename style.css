@@ -97,11 +97,12 @@ body {
 
  li{
 	margin: 0 0 1px 0;
+	width: 500px;
 	
 	list-style-type: none; 
 }
 
-form{
+/* form{
 	border: 1px solid #ad9d80;
 	padding: 4px 20px 4px 24px;
 	width: 254px;
@@ -109,7 +110,7 @@ form{
 	height: 30px;
 	background-color: #e4d9c5;
 	border-radius: 9px;
-}
+} */
 input[type="text"]{
 	/* border: none; */
 	/* opacity: 0; */
@@ -124,6 +125,7 @@ input[type="text"]{
 	/* font-style: italic; */
 	padding: 0 8px 0 0;
 	width: 192px;
+	/* border: none; */
   }
 
   button{
@@ -147,9 +149,9 @@ span {
 	
 	border: 1px solid #000;
 	border-radius: 0 2px 2px 0;
-	
+	width: 500px;
 	padding: 15px;
-	background-color: aqua;
+	/* background-color: aqua; */
 	color: rgb(255, 255, 255);
 	font-weight: 700;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -162,10 +164,11 @@ span {
 .cl1 {
 	display: inline-block;
 	padding: 14.5px;
+	/* width: 500px; */
 	margin: 0 1px 0 0;
 	border: 1px solid #000;
 	border-radius: 2px 0 0 2px;
-	background-color: aqua;
+	
 }
 .red {
 	background-color: #fc6262;
@@ -191,6 +194,7 @@ span {
 .color_red {
 	background-color: red;
 }
-.n0 {
+.clRed {
 	color: red;
 }
+
