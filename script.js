@@ -31,17 +31,46 @@ $(window).ready(function () {
 
 		$('.ccr').on('click', function () {
 			$('input[type=checkbox]:checked').each(function (index, value) {
-				$(this).parent().parent().css('background-color', 'red');
-				console.log($(this).parent());
+				$(this).parent().parent().css('background-color', '#fc6262');
+				
 			});
 		})
 
 		$('.ccb').on('click', function () {
 			$('input[type=checkbox]:checked').each(function (index, value) {
-				$(this).parent().parent().css('background-color', 'blue');
+				$(this).parent().parent().css('background-color', '#ff80d7');
 			})
 
 		})
+
+		$('.ccp').on('click', function () {
+			$('input[type=checkbox]:checked').each(function (index, value) {
+				$(this).parent().parent().css('background-color', '#8d55a3');
+				
+			});
+		})
+
+		$('.ccl_b').on('click', function () {
+			$('input[type=checkbox]:checked').each(function (index, value) {
+				$(this).parent().parent().css('background-color', '#4d7ee8');
+			})
+
+		})
+
+		$('.ccl_a').on('click', function () {
+			$('input[type=checkbox]:checked').each(function (index, value) {
+				$(this).parent().parent().css('background-color', '#4ebdd9');
+				
+			});
+		})
+
+		$('.ccn_y').on('click', function () {
+			$('input[type=checkbox]:checked').each(function (index, value) {
+				$(this).parent().parent().css('background-color', '#cfca3c');
+			})
+
+		})
+	
 	}
 
 
